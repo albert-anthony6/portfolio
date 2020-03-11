@@ -1,0 +1,52 @@
+
+.heroimage-text-container{
+    // background-color: red;
+    height: 220px;
+    width: 1050px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 20.8px;
+    color: #fff;
+    
+    span{
+        width: 50%;
+        height: 100%;
+
+        h1{font-size: 2.2em;}
+
+        h1,
+        h2{
+            text-transform: uppercase;
+            line-height: 1.5;
+        }
+    }
+
+    span:first-of-type{
+        // background-color: blue;
+        line-height: 1.3;
+    }
+
+    span:last-of-type{
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: 10px;
+        text-align: center;
+        padding: 40px 30px 40px 30px;
+
+        button{
+            margin-top: 50px;
+            cursor: pointer;
+            color: #fff;
+            width: 100%;
+            height: 50px;
+            border: 2px solid blue;
+            border-radius: 5px;
+            outline: none;
+            background-color: transparent;
+        }
+    }
+}

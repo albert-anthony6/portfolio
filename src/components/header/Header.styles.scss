@@ -1,0 +1,36 @@
+.header-container{
+    padding: 0px 15px 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, .5);
+    border-bottom: 2px solid rgba(255, 255, 255, .5);
+
+    img{
+        cursor: pointer;
+    }
+
+    ul{
+        display: flex;
+        align-items: center;
+        width: 50%;
+        justify-content: space-between;
+
+        li{
+            font-family: "Alegreya Sans", sans-serif;
+            font-size: 20px;
+            cursor: pointer;
+            list-style: none;
+            text-transform: uppercase;
+            color: #fff;
+            opacity: .8;
+            border-bottom: 2px solid transparent;
+            transition: all .2s;
+
+            &:hover{
+                opacity: 1;
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
+        
+}
