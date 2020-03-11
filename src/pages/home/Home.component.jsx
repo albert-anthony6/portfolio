@@ -1,9 +1,11 @@
 import React from 'react';
 import './Home.styles.scss'
+import FontAwesome from 'react-fontawesome';
 
 const Home = () => (
     <React.Fragment>
         <div className="heroimage-text-container">
+            <FontAwesome className="fa-chevron-down" name="chevron-down" size="2x"/>
             <span>
                 <h1>A|V Technologies</h1>
                 <h2>People work better together</h2>
