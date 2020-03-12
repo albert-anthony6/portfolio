@@ -164,3 +164,160 @@ header{
 }
 
 /* End of about me section */
+
+/* Projects section */
+
+.projects{
+    width: 100vw;
+
+    .projects-container{
+        padding: 100px 270px 100px 270px;
+        font-size: 1.8rem;
+
+        h2{font-weight: 400; font-size: 3.5rem;}
+
+        hr{
+            width: 30%;
+            border: none;
+            margin: .8rem 0 1rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+        }
+
+        p{margin-bottom: 3rem;}
+
+        .cards{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+/* End of projects section */
+
+/* Technological skills section */
+
+.tech-skills{
+    width: 100vw;
+    background-color: #f6f6f6;
+    text-align: center;
+
+    .tech-skills-container{
+        padding: 100px 270px 100px 270px;
+        
+        h2{font-weight: 400; font-size: 3.5rem;}
+
+        hr{
+            width: 30%;
+            border: none;
+            margin: .8rem 0 1rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+            margin-left: 35%;
+        }
+
+        p{font-size: 1.7rem;}
+    }
+
+    .skills-grid{
+        margin-top: 2rem;
+        display: grid;
+        grid-column-gap: .2rem;
+        grid-row-gap: 2rem;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+        "html html css css js js"
+        "sass sass git git bootstrap bootstrap"
+        "github github github github github github"
+        "react react react redux redux redux"
+        "problem-solver problem-solver problem-solver problem-solver problem-solver problem-solver";
+        
+        .html{grid-area: html;}
+        .css{grid-area: css;}
+        .js{grid-area: js;}
+        .sass{grid-area: sass;}
+        .bootstrap{grid-area: bootstrap;}
+        .react{grid-area: react;}
+        .redux{grid-area: redux;}
+        .git{grid-area: git;}
+        .github{grid-area: github;}
+        .problem-solver{grid-area: problem-solver;}
+        
+        p{
+            background-color: rgba(0, 0, 255, 0.534);
+            border: 1px solid blue;
+            border-radius: .3rem;
+            color: #fff;
+            font-weight: 500;
+            padding: .5em;
+            transition: all .2s;
+
+            &:hover{
+                background-color: #fff;
+                color: blue
+            }
+        }
+    }
+}
+
+/* End of Technological skills section */
+
+/* Why work with me section */
+
+.why-me{
+    width: 100vw;
+    text-align: center;
+
+    .why-me-container{
+        padding: 100px 270px 100px 270px;
+        
+        h2{font-weight: 400; font-size: 3.5rem;}
+
+        hr{
+            width: 30%;
+            border: none;
+            margin: .8rem 0 1rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+            margin-left: 35%;
+        }
+
+        p{font-size: 1.7rem;}
+
+        .reasons{
+            margin-top: 2rem;
+            display: flex;
+            width: 100%;
+
+            .reason{
+                width: 33.3%;
+                height: auto;
+                padding: 1.2rem;
+                
+                &:not(:last-of-type){
+                    margin-right: 2rem;
+                }
+            }
+            .fa{color: blue; margin-bottom: 2rem;}
+            .fa-code{font-weight: 600;}
+            p{font-size: 1.9rem;}
+            h3{
+                font-weight: 500;
+                font-size: 2.5rem;
+                line-height: 1;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}
+
+/* End of why work with me section */
+
+/* Testimonials section */
+
+.testimonials{
+    width: 100vw;
+    text-align: center;
+    background-color: #f6f6f6;
+
+    .testimonials-container{
+        padding: 100px 270px 100px 270px;
+    }
+}

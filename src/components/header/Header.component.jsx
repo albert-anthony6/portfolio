@@ -16,8 +16,8 @@ const Header = () => (
             <li>Connect With Me</li>
             <li>Testimonials</li>
             <li>Contact</li>
-            <li>Resume <FontAwesome className="fa-download" name="resume-download-button" size="1x"/></li>
-            <li>GitHub <FontAwesome className="fa-github" name="github" size="1x"/></li>
+            <li>Resume <FontAwesome className="fa-download" name="resume-download-button"/></li>
+            <li>GitHub <FontAwesome className="fa-github" name="github"/></li>
         </ul>
     </div>
 );
