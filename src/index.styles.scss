@@ -1,8 +1,19 @@
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
 body{
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../src/assets/HeroImage.jpg);
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 1.6em;
+    line-height: 1.4;
+    color: #373a3c;
+    overflow-x: hidden;
 }

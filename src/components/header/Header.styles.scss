@@ -4,20 +4,26 @@
     justify-content: space-between;
     background-color: rgba(0, 0, 0, .5);
     border-bottom: 2px solid rgba(255, 255, 255, .5);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 
     img{
         cursor: pointer;
     }
 
+    .fa-bars{display: none;}
+
     ul{
         display: flex;
         align-items: center;
-        width: 50%;
-        justify-content: space-between;
+        width: 80vw;
+        justify-content: flex-end;
+        flex-wrap: wrap;
 
         li{
-            font-family: "Alegreya Sans", sans-serif;
-            font-size: 20px;
+            font-size: 2rem;
+            margin-left: 3rem;
             cursor: pointer;
             list-style: none;
             text-transform: uppercase;
@@ -32,5 +38,13 @@
             }
         }
     }
-        
+       
+    @media screen and(max-width: 700px){
+        ul{display: none;}
+        .fa-bars{
+            display: block;
+            color: #fff;
+            cursor: pointer;
+        }   
+    }
 }
