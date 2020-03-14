@@ -188,6 +188,14 @@ header{
         .cards{
             display: flex;
             justify-content: space-between;
+
+            @media screen and (max-width: 750px){
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 1025px){
+            padding: 100px 150px 100px 100px;
         }
     }
 }
@@ -215,6 +223,10 @@ header{
         }
 
         p{font-size: 1.7rem;}
+
+        @media screen and (max-width: 1080px){
+            padding: 100px;
+        }
     }
 
     .skills-grid{
@@ -225,8 +237,8 @@ header{
         grid-template-columns: repeat(6, 1fr);
         grid-template-areas: 
         "html html css css js js"
-        "sass sass git git bootstrap bootstrap"
-        "github github github github github github"
+        "git git git github github github"
+        "sass sass adobe adobe bootstrap bootstrap"
         "react react react redux redux redux"
         "problem-solver problem-solver problem-solver problem-solver problem-solver problem-solver";
         
@@ -235,6 +247,7 @@ header{
         .js{grid-area: js;}
         .sass{grid-area: sass;}
         .bootstrap{grid-area: bootstrap;}
+        .adobe{grid-area: adobe;}
         .react{grid-area: react;}
         .redux{grid-area: redux;}
         .git{grid-area: git;}
@@ -267,7 +280,7 @@ header{
     text-align: center;
 
     .why-me-container{
-        padding: 100px 270px 100px 270px;
+        padding: 100px 220px 100px 220px;
         
         h2{font-weight: 400; font-size: 3.5rem;}
 
@@ -294,6 +307,10 @@ header{
                 &:not(:last-of-type){
                     margin-right: 2rem;
                 }
+
+                @media screen and (max-width: 750px){
+                    width: 100%;
+                }
             }
             .fa{color: blue; margin-bottom: 2rem;}
             .fa-code{font-weight: 600;}
@@ -304,6 +321,18 @@ header{
                 line-height: 1;
                 margin-bottom: 1.5rem;
             }
+
+            @media screen and (max-width: 750px){
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 1160px){
+            padding: 100px 80px 100px 80px;
+        }
+
+        @media screen and (max-width: 880px){
+            padding: 100px 30px 100px 30px;
         }
     }
 }
@@ -318,6 +347,62 @@ header{
     background-color: #f6f6f6;
 
     .testimonials-container{
-        padding: 100px 270px 100px 270px;
+        padding: 100px 220px 100px 220px;
+        font-size: 1.8rem;
+
+        h2{font-weight: 400; font-size: 3.5rem;}
+
+        hr{
+            width: 30%;
+            border: none;
+            margin: .8rem 0 1rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+            margin-left: 35%;
+        }
+
+        .clients-container{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .client-box{
+                padding: 2rem;
+                width: 45%;
+                border-radius: 1.5%;
+
+                p{
+                    border-left: .8rem solid rgba(75, 75, 75, 0.473);
+                    border-radius: 10%;
+                    padding-left: 2rem;
+
+                    span{
+                        font-size: 1.2em;
+                        display: inline-block;
+                        margin-top: 1.2rem;
+                    }
+                }
+
+                @media screen and (max-width: 820px){
+                    width: 100%;
+                }
+            }
+
+            @media screen and (max-width: 820px){
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 1180px){
+            padding: 100px 50px 100px 50px;
+        }
+
+        @media screen and (max-width: 900px){
+            padding: 100px 20px 100px 20px;
+        }
     }
 }
+
+/* End of testimonials section */
+
+/* Footer */
+
