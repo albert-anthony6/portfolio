@@ -406,3 +406,38 @@ header{
 
 /* Footer */
 
+footer{
+    background-color: #484848;
+    color: #fff;
+    padding: 100px 190px 100px 190px;
+
+    .footer-container{
+        display: flex;
+
+        p{margin-bottom: 1rem;}
+
+        .footer-about-me{
+            padding: 0 5rem 0 0;
+            width: 65%;
+            h2{font-size: 4rem; font-weight: 400;}
+        }
+
+        .contact{
+            width: 35%;
+        }
+    }
+
+    .fas{margin: 0 1rem 1rem 0}
+    .fa-github,
+    .fa-linkedin{cursor: pointer;}
+
+    .copyright{text-align: center;}
+
+    @media screen and (max-width: 1150px){
+        padding: 100px 30px 100px 30px;
+    }
+
+    @media screen and (max-width: 850px){
+        padding: 100px 10px 100px 10px;
+    }
+}
