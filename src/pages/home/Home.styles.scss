@@ -29,7 +29,7 @@ header{
             width: 50%;
             height: auto;
 
-            h1{font-size: 2.2em;}
+            h1{font-size: 4.5rem;}
 
             h1,
             h2{
@@ -161,6 +161,10 @@ header{
             img{border: none}
         }
     }
+
+    @media screen and (max-width: 500px){
+        padding: 100px 20px 100px 20px;
+    }
 }
 
 /* End of about me section */
@@ -197,6 +201,10 @@ header{
         @media screen and (max-width: 1025px){
             padding: 100px 150px 100px 100px;
         }
+
+        @media screen and (max-width: 500px){
+            padding: 100px 20px 100px 20px;
+        }
     }
 }
 
@@ -226,6 +234,10 @@ header{
 
         @media screen and (max-width: 1080px){
             padding: 100px;
+        }
+
+        @media screen and (max-width: 500px){
+            padding: 100px 20px 100px 20px;
         }
     }
 
@@ -409,6 +421,7 @@ header{
 footer{
     background-color: #484848;
     color: #fff;
+    width: 100vw;
     padding: 100px 190px 100px 190px;
 
     .footer-container{
@@ -439,5 +452,24 @@ footer{
 
     @media screen and (max-width: 850px){
         padding: 100px 10px 100px 10px;
+    }
+
+    @media screen and (max-width: 500px){
+        // padding: 100px 10px 100px 10px;
+        text-align: center;
+
+        .footer-container{
+            text-align: center;
+            flex-direction: column;
+
+            .footer-about-me{
+                width: 100%;
+                padding: 0;
+            }
+
+            .contact{
+                width: 100%;
+            }
+        }
     }
 }

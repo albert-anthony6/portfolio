@@ -5,9 +5,11 @@ import Header from './components/header/Header.component';
 
 import Home from './pages/home/Home.component';
 
+import './App.styles.scss';
+
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <Header/>
       <Switch>
         <Route exact path="/" component={Home}/>
