@@ -1,21 +1,23 @@
+/* Overview Section */
+
 .overview{
     padding: 100px 270px 100px 270px;
     width: 100vw;
     background-color: #2C3339;
     color: #fff;
-        h2{
-            text-align: center;
-            font-size: 3.5rem;
-            font-weight: 400;
-        }
+    
+    h2{
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: 400;
+    }
 
-        hr{
-            width: 300px;
-            margin: 0 auto;
-        }
+    hr{
+        width: 300px;
+        margin: 0 auto;
+    }
 
     .overview-container{
-        // background-color: rgba(255, 0, 0, 0.308);
         margin-top: 2rem;
         display: flex;
         width: 100%;
@@ -27,12 +29,10 @@
                 border-left: 2px solid blue;
                 width: 100%;
                 padding-left: 2rem;
-                // background-color: yellow;
             }
         }
 
         .overview-img{
-            // background-color: blue;
             width: 40%;
             transition: transform .2s;
             img{
@@ -47,7 +47,6 @@
     }
 
     .overview-btns{
-        // background-color: red;
         width: 93%;
         display: flex;
         justify-content: flex-end;
@@ -59,7 +58,7 @@
             margin-top: 2rem;
             border: 1px solid blue;
             background-color: blue;
-            padding: 10px 51px 10px 51px;
+            padding: 10px 45px 10px 45px;
             outline: none;
             font-size: 1.6rem;
             cursor: pointer;
@@ -75,3 +74,78 @@
         }
     }
 }
+
+/* End of Overview Section */
+
+/* Tech Used Section */
+
+.tech-used{
+    padding: 100px 270px 100px 270px;
+    width: 100vw;
+    background-color: #f6f6f6;
+
+    h2{
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: 400;
+    }
+
+    hr{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .tech-used-container{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .tech-used-ul{
+            width: 50%;
+            margin-left: 2.5rem;
+            
+            ul{
+                border-left: 3px solid blue;
+                width: 100%;
+                padding-left: 2rem;
+
+                li{margin-left: .8rem;}
+            }
+        }
+
+        .tech-used-img{
+            width: 40%;
+            transition: transform .2s;
+            img{
+                width: 100%;
+                height: auto;
+                transition: all .2s ease-out;
+            }
+            &:hover{
+                transform: scale(1.09);
+            }
+        }
+    }
+
+    .tech-used-btn{
+        // background-color: rgba(255, 0, 0, 0.212);
+        text-align: center;
+        margin-top: 1.5rem;
+
+        button{
+            outline: none;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            font-size: 2rem;
+            transition: transform .2s;
+
+            &:hover{
+                transform: translateX(-7px);
+            }
+        }
+    }
+}
+
+/* End of Tech Used Section */

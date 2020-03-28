@@ -1,10 +1,12 @@
 import React from 'react';
 import './Card.styles.scss';
 
-const Card = ({imgUrl}) => (
+import { Link } from 'react-router-dom';
+
+const Card = ({ imgUrl, name }) => (
     <div className="card">
         <div className="img-overlay">
-            <img src={imgUrl} alt="project-thumbnail"/>
+            <Link to={name}><img src={imgUrl} alt="project-thumbnail"/></Link>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus suscipit sint quam molestias...</p>
     </div>
