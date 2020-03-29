@@ -44,6 +44,25 @@
                 transform: scale(1.09);
             }
         }
+
+        @media screen and (max-width: 750px){
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+
+            .overview-p{
+                width: 90%;
+                margin: 0 auto;
+
+                p{border: none;}
+            }
+
+            .overview-img{
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 2rem;
+            }
+        }
     }
 
     .overview-btns{
@@ -72,6 +91,29 @@
                 border-color: #fff;
             }
         }
+
+        @media screen and (max-width: 500px){
+            width: 100%;
+            justify-content: center;
+
+            button{
+                padding: 10px 25px 10px 25px;
+            }
+        }
+
+        @media screen and (max-width: 400px){
+            button{
+                padding: 10px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1280px){
+        padding: 100px 80px 100px 80px;
+    }
+
+    @media screen and (max-width: 850px){
+        padding: 100px 20px 100px 20px;
     }
 }
 
@@ -126,10 +168,36 @@
                 transform: scale(1.09);
             }
         }
+
+        @media screen and (max-width: 750px){
+            flex-direction: column;
+
+            .tech-used-ul{
+                width: 85%;
+
+                ul{
+                    border: none;
+                    
+                    li{
+                        background-color: rgb(92, 55, 255);
+                        margin-top: 1rem;
+                        border-radius: 10px;
+                        text-align: center;
+                        list-style: none;
+                        color: #fff;
+                    }
+                }
+            }
+
+            .tech-used-img{
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 2rem;
+            }
+        }
     }
 
     .tech-used-btn{
-        // background-color: rgba(255, 0, 0, 0.212);
         text-align: center;
         margin-top: 1.5rem;
 
@@ -145,6 +213,14 @@
                 transform: translateX(-7px);
             }
         }
+    }
+
+    @media screen and (max-width: 1280px){
+        padding: 100px 80px 100px 80px;
+    }
+
+    @media screen and (max-width: 850px){
+        padding: 100px 20px 100px 20px;
     }
 }
 

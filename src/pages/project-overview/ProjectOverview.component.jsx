@@ -30,8 +30,8 @@ const ProjectOverview = () => {
                     </div>
 
                     <div className="overview-btns">
-                        <button>View Project <FontAwesome className="fas fa-angle-double-right" name="angle-double-right"/></button>
-                        <button>View Code <FontAwesome className="fas fa-angle-double-right" name="angle-double-right"/></button>
+                        <a href="https://react-theater.herokuapp.com" target="_blank"><button>View Project <FontAwesome className="fas fa-angle-double-right" name="angle-double-right"/></button></a>
+                        <a href="https://github.com/albert-anthony6/react-films" target="_blank"><button>View Code <FontAwesome className="fas fa-angle-double-right" name="angle-double-right"/></button></a>
                     </div>
                 </section>
 
