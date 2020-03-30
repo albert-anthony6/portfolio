@@ -4,7 +4,7 @@ import './Footer.styles.scss';
 import FontAwesome from 'react-fontawesome';
 
 const Footer = () => (
-    <footer>
+    <footer id="footer">
         <div className="footer-container">
             <div className="footer-about-me">
                 <h2>About ALBERT</h2>

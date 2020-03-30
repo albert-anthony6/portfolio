@@ -12,13 +12,13 @@ const Home = () => (
     <React.Fragment>
         <HeroSection/>
         <main className="main-container">
-            <section className="about-me">
+            <section className="about-me" id="about">
                 <div className="about-me-container">
                     <h2>Who am I...</h2>
                     <hr/>
                     <p>Hello there! My name is Albert and I'm a Front End Developer</p>
                     <p>Like many other people, I enjoy spending my free time increasing my knowledge of Web Development and building new and challenging projects.</p>
-                    <button>Find out more</button>
+                    <a href="#footer"><button>Find out more</button></a>
                 </div>
 
                 <div className="about-me-image">
@@ -26,7 +26,7 @@ const Home = () => (
                 </div>
             </section>
 
-            <section className="projects">
+            <section className="projects" id="project">
                 <div className="projects-container">
                     <h2>My Latest Work</h2>
                     <hr/>
@@ -88,7 +88,7 @@ const Home = () => (
                 </div>
             </section>
 
-            <section className="testimonials">
+            <section className="testimonials" id="testimonial">
                 <div className="testimonials-container">
                     <h2>Client Testimonials</h2>
                     <hr/>

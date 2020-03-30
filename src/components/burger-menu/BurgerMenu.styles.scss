@@ -1,0 +1,28 @@
+.burger-menu{
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100vw;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    a{
+        text-decoration: none;
+
+        li{
+            font-size: 2rem;
+            list-style: none;
+            text-transform: uppercase;
+            color: #fff;
+            opacity: .8;
+            border: 2px solid transparent;
+            transition: all .2s;
+
+            &:hover{
+                opacity: 1;
+                border: 1px solid #fff;
+            }
+        }
+    }
+}

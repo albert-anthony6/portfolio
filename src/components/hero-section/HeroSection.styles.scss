@@ -9,11 +9,8 @@ header{
     position: relative;
 
     .heroimage-text-container{
-        // height: 220px;
         width: 70vw;
         height: auto;
-        // background-color: red;
-        // width: 1050px;
         display: flex;
         align-items: center;
         position: absolute;
@@ -24,8 +21,6 @@ header{
         color: #fff;
         
         span{
-            // width: 50vw;
-            // height: auto;
             width: 50%;
             height: auto;
 
@@ -65,15 +60,6 @@ header{
                 }
             }
         }
-
-        .fa-chevron-down{
-            width: 0;
-            font-size: 4rem;
-            position: absolute;
-            top: 100%;
-            left: 48%;
-            cursor: pointer;
-        }
         
         @media screen and (max-width: 870px){
             span{
@@ -81,6 +67,19 @@ header{
                 text-align: center;
             }
             span:last-of-type{display: none;}
+        }
+    }
+
+    a{
+        color: #fff;
+
+        .fa-chevron-down{
+            width: 0;
+            font-size: 4rem;
+            position: absolute;
+            top: 68%;
+            left: 49%;
+            cursor: pointer;
         }
     }
 }
