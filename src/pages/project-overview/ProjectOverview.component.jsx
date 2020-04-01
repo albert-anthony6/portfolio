@@ -7,25 +7,43 @@ import FontAwesome from 'react-fontawesome';
 
 import { Link } from 'react-router-dom';
 
-const ProjectOverview = () => {
+const ProjectOverview = ({ match }) => {
     useEffect(() => {
         window.scrollTo(0, 650);
     }, []);
 
+    let project = {};
+
+    if(match.params.projectId === 'movie'){
+        project = {
+            p: 'Browse your favorite Movies, TV shows, and actors. Search for specific movies, shows or actors by date, rating, region and other categories. Browse the latest and greatest films and to find information about its actors, crew, and reviews. Rate and favorite Movies, TV shows and actors while having access to them through a user account. Login / Authentication.',
+            img: 'http://www.abwtechnologies.com/images/film-cloud-summary.png',
+            gif: 'https://media.giphy.com/media/IgAS8mUgG6FZuWN9V1/giphy.gif',
+            list: ['React', 'Redux', 'Hooks', 'TMDB API', 'Sass', 'React Router']
+        }
+    } else if(match.params.projectId === 'ecommerce'){
+        project = {
+            p: 'Something else',
+            img: 'http://www.abwtechnologies.com/images/film-cloud-summary.png',
+            gif: 'https://media.giphy.com/media/IgAS8mUgG6FZuWN9V1/giphy.gif',
+            list: ['React', 'Redux', 'Hooks', 'TMDB API', 'Sass', 'React Router']
+        }
+    }
+    
     return(
         <React.Fragment>
             <HeroSection/>
             <main>
-                <section className='overview'>
+                <section className='overview' id="about">
                     <h2>Overview:</h2>
                     <hr/>
 
                     <div className="overview-container">
                         <div className="overview-p">
-                            <p>Browse your favorite Movies, TV shows, and actors. Search for specific movies, shows or actors by date, rating, region and other categories. Browse the latest and greatest films and to find information about its actors, crew, and reviews. Rate and favorite Movies, TV shows and actors while having access to them through a user account. Login / Authentication.</p>
+                            <p>{project.p}</p>
                         </div>
                         <div className="overview-img">
-                            <img src="http://www.abwtechnologies.com/images/film-cloud-summary.png" alt="Project image"/>
+                            <img src={project.img} alt="Project image"/>
                         </div>
                     </div>
 
@@ -41,17 +59,14 @@ const ProjectOverview = () => {
 
                     <div className="tech-used-container">
                         <div className="tech-used-img">
-                            <img src="https://media.giphy.com/media/IgAS8mUgG6FZuWN9V1/giphy.gif" alt="Project image"/>
+                            <img src={project.gif} alt="Project image"/>
                         </div>
 
                         <div className="tech-used-ul">
                             <ul>
-                                <li>React</li>
-                                <li>Redux</li>
-                                <li>Hooks</li>
-                                <li>TMDB API</li>
-                                <li>Sass</li>
-                                <li>React Router</li>
+                                {project.list.map((tech) => (
+                                    <li>{tech}</li>
+                                ))}
                             </ul>
                         </div>
                     </div>

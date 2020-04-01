@@ -32,8 +32,8 @@ const Home = () => (
                     <hr/>
                     <p>Some of my greatest and latest projects.</p>
                     <div className="cards">
-                        <Card name="/project" imgUrl="http://www.abwtechnologies.com/images/film-cloud-summary.png"/>
-                        <Card name="/project" imgUrl="http://www.abwtechnologies.com/images/space-xplorer-summary.png"/>
+                        <Card name="/project/movie" imgUrl="http://www.abwtechnologies.com/images/film-cloud-summary.png"/>
+                        <Card name="/project/ecommerce" imgUrl="http://www.abwtechnologies.com/images/space-xplorer-summary.png"/>
                     </div>
                 </div>
             </section>

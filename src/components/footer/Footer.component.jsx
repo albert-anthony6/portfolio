@@ -30,7 +30,7 @@ const Footer = () => (
         </div>
 
         <div className="footer-links">
-            <FontAwesome className="fas fa-github" name="github" size="2x"/>
+            <a href="https://github.com/albert-anthony6" target="_blank"><FontAwesome className="fas fa-github" name="github" size="2x"/></a>
             <FontAwesome className="fas fa-linkedin" name="linkedin" size="2x"/>
         </div>
 
