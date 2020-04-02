@@ -7,7 +7,7 @@ import FontAwesome from 'react-fontawesome';
 
 import BurgerMenu from '../burger-menu/BurgerMenu.component';
 
-const Header = () => {
+const Header = ({ home }) => {
     const [hidden, setHidden] = useState(true);
 
     return(
@@ -15,14 +15,26 @@ const Header = () => {
             <Link to="/"><img src={Logo} alt="logo"/></Link>
 
             <FontAwesome className="fa-bars" onClick={() => setHidden(!hidden)} name="bars" size="2x"/>
-            <ul className="nav-options">
-                <a href="#about"><li>About</li></a>
-                <a href="#project"><li>Projects</li></a>
-                <a href="#testimonial"><li>Testimonials</li></a>
-                <a href="#footer"><li>Contact</li></a>
-                <a href="#"><li>Resume <FontAwesome className="fa-download" name="resume-download-button"/></li></a>
-                <a href="https://github.com/albert-anthony6" target="_blank"><li>GitHub <FontAwesome className="fa-github" name="github"/></li></a>
-            </ul>
+            {
+                home ? 
+                <ul className="nav-options">
+                    <a href="#about"><li>About</li></a>
+                    <a href="#project"><li>Projects</li></a>
+                    <a href="#testimonial"><li>Testimonials</li></a>
+                    <a href="#footer"><li>Contact</li></a>
+                    <a href="#"><li>Resume <FontAwesome className="fa-download" name="resume-download-button"/></li></a>
+                    <a href="https://github.com/albert-anthony6" target="_blank"><li>GitHub <FontAwesome className="fa-github" name="github"/></li></a>
+                </ul>
+                :
+                <ul className="nav-options">
+                    <Link to="/"><li>Home</li></Link>
+                    <a href="#about"><li>About</li></a>
+                    <a href="#technologies"><li>Technologies</li></a>
+                    <a href="#footer"><li>Contact</li></a>
+                    <a href="#"><li>Resume <FontAwesome className="fa-download" name="resume-download-button"/></li></a>
+                    <a href="https://github.com/albert-anthony6" target="_blank"><li>GitHub <FontAwesome className="fa-github" name="github"/></li></a>
+                </ul>
+            }
             {!hidden ? <BurgerMenu/> : null}
         </div>
     );

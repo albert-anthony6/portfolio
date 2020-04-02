@@ -5,11 +5,12 @@ import HeroSection from '../../components/hero-section/HeroSection.component';
 import Footer from '../../components/footer/Footer.component';
 import FontAwesome from 'react-fontawesome';
 
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
-const ProjectOverview = ({ match }) => {
+const ProjectOverview = ({ match, changeHome }) => {
     useEffect(() => {
         window.scrollTo(0, 650);
+        changeHome(false);
     }, []);
 
     let project = {};
@@ -53,7 +54,7 @@ const ProjectOverview = ({ match }) => {
                     </div>
                 </section>
 
-                <section className="tech-used">
+                <section className="tech-used" id="technologies">
                     <h2>Technologies Used:</h2>
                     <hr/>
 
@@ -81,4 +82,4 @@ const ProjectOverview = ({ match }) => {
     );
 };
 
-export default ProjectOverview;
+export default withRouter(ProjectOverview);
