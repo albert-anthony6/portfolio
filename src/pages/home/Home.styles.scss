@@ -34,7 +34,7 @@
         }
 
         button{
-            border: 2px solid blue;
+            border: 1px solid blue;
             outline: none;
             width: 50%;
             color: #fff;
@@ -43,6 +43,12 @@
             height: 40px;
             border-radius: .5rem;
             font-size: 1.5rem;
+            transition: all .2s;
+
+            &:hover{
+                background: #f6f6f6;
+                color: blue;
+            }
         }
     }
 

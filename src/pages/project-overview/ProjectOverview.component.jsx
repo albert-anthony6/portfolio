@@ -4,6 +4,8 @@ import './ProjectOverview.styles.scss';
 import HeroSection from '../../components/hero-section/HeroSection.component';
 import Footer from '../../components/footer/Footer.component';
 import FontAwesome from 'react-fontawesome';
+import MoviesImg from '../../assets/Movies.png';
+import CrwnImg from '../../assets/CrwnImg.png';
 
 import { Link, withRouter } from 'react-router-dom';
 
@@ -17,17 +19,17 @@ const ProjectOverview = ({ match, changeHome }) => {
 
     if(match.params.projectId === 'movie'){
         project = {
-            p: 'Browse your favorite Movies, TV shows, and actors. Search for specific movies, shows or actors by date, rating, region and other categories. Browse the latest and greatest films and to find information about its actors, crew, and reviews. Rate and favorite Movies, TV shows and actors while having access to them through a user account. Login / Authentication.',
-            img: 'http://www.abwtechnologies.com/images/film-cloud-summary.png',
+            p: 'Browse for your favorite Movies and actors. Browse the latest and greatest films and find information about their budget, crew, rating, and runtime. Users have the ability to scroll through any category until they find a movie that catch their interest, go to specific category pages to search for a movie that would be under a specific category, or simply search for any movie within TMDB API by title.',
+            img: MoviesImg,
             gif: 'https://media.giphy.com/media/IgAS8mUgG6FZuWN9V1/giphy.gif',
             list: ['React', 'Redux', 'Hooks', 'TMDB API', 'Sass', 'React Router']
         }
     } else if(match.params.projectId === 'ecommerce'){
         project = {
-            p: 'Something else',
-            img: 'http://www.abwtechnologies.com/images/film-cloud-summary.png',
-            gif: 'https://media.giphy.com/media/IgAS8mUgG6FZuWN9V1/giphy.gif',
-            list: ['React', 'Redux', 'Hooks', 'TMDB API', 'Sass', 'React Router']
+            p: 'Browse the Crown store for any clothing coming from a firebase database. Select items to add them to your cart and proceed to customize your cart before checking out with the provided test credit card information. Users who log in will have their cart items stored and remembered for the next time they visit the store. User accounts are put into the firebase database and users have the ability to sign in with their Google accounts instead if they prefer.',
+            img: CrwnImg,
+            gif: 'https://media.giphy.com/media/MBx1WEvDLgZ0S9XoN7/giphy.gif',
+            list: ['React', 'Redux', 'Redux Saga', 'firebase', 'Sass', 'React Router']
         }
     }
     

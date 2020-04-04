@@ -7,6 +7,8 @@ import ComputerToWorld from '../../assets/ComputerToWorld.png';
 import Card from '../../components/card/Card.component';
 import HeroSection from '../../components/hero-section/HeroSection.component';
 import Footer from '../../components/footer/Footer.component';
+import MoviesThumb from '../../assets/MoviesThumb.png';
+import CrwnThumb from '../../assets/CrwnThumb.png';
 
 const Home = ({ changeHome }) => {
     useEffect(() => {
@@ -37,8 +39,8 @@ const Home = ({ changeHome }) => {
                         <hr/>
                         <p>Some of my greatest and latest projects.</p>
                         <div className="cards">
-                            <Card name="/project/movie" imgUrl="http://www.abwtechnologies.com/images/film-cloud-summary.png"/>
-                            <Card name="/project/ecommerce" imgUrl="http://www.abwtechnologies.com/images/space-xplorer-summary.png"/>
+                            <Card name="/project/movie" info="Browse for your favorite Movies and actors. Browse the latest and greatest films and..." imgUrl={MoviesThumb}/>
+                            <Card name="/project/ecommerce" info="Browse the Crown store for any clothing coming from a firebase database. Select items..." imgUrl={CrwnThumb}/>
                         </div>
                     </div>
                 </section>
