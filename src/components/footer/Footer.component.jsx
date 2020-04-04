@@ -9,7 +9,7 @@ const Footer = () => (
             <div className="footer-about-me">
                 <h2>About ALBERT</h2>
                 <p>Hello there! My name is Albert and I'm a Front End Developer.</p> 
-                <p>I started my journey as a self-taught web developer during senior year of High School when I first discovered the biggest HTML, CSS, and JavaScript. Ever since I have fallen in love with web development and spend most of my days taking my craft to the next level.</p> 
+                <p>I started my journey as a self-taught web developer during senior year of High School when I first discovered HTML, CSS, and JavaScript. Ever since I have fallen in love with web development and spend most of my days taking my craft to the next level.</p> 
                 <p>Nowadays I tend to code all of my projects from scratch in order to deliver a unique experience to every company.</p> 
                 <p>Like many other people, I enjoy spending my free time increasing my knowledge of Web Development and building new and challenging projects.</p> 
                 <p>Some of my favorite things to do include:</p> 
@@ -18,7 +18,7 @@ const Footer = () => (
             <div className="contact">
                 <h2>Say hello:</h2>
                 <p><FontAwesome className="fa-map-marker" name="map-marker"/> Address: Memphis, TN 38122</p>
-                <p><FontAwesome className="fa-envelope" name="envelope"/> Email: albert.anthony1999@gmail.com</p>
+                <p><FontAwesome className="fa-envelope" name="envelope"/> Email: valdesalbert21@gmail.com</p>
                 <p><FontAwesome className="fa-phone" name="phone"/> Phone: (901) 265-2710</p>
             </div>
         </div>

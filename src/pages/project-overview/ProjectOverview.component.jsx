@@ -22,14 +22,18 @@ const ProjectOverview = ({ match, changeHome }) => {
             p: 'Browse for your favorite Movies and actors. Browse the latest and greatest films and find information about their budget, crew, rating, and runtime. Users have the ability to scroll through any category until they find a movie that catch their interest, go to specific category pages to search for a movie that would be under a specific category, or simply search for any movie within TMDB API by title.',
             img: MoviesImg,
             gif: 'https://media.giphy.com/media/IgAS8mUgG6FZuWN9V1/giphy.gif',
-            list: ['React', 'Redux', 'Hooks', 'TMDB API', 'Sass', 'React Router']
+            list: ['React', 'Redux', 'Hooks', 'TMDB API', 'Sass', 'React Router'],
+            link: 'https://react-theater.herokuapp.com',
+            code: 'https://github.com/albert-anthony6/react-films'
         }
     } else if(match.params.projectId === 'ecommerce'){
         project = {
             p: 'Browse the Crown store for any clothing coming from a firebase database. Select items to add them to your cart and proceed to customize your cart before checking out with the provided test credit card information. Users who log in will have their cart items stored and remembered for the next time they visit the store. User accounts are put into the firebase database and users have the ability to sign in with their Google accounts instead if they prefer.',
             img: CrwnImg,
             gif: 'https://media.giphy.com/media/MBx1WEvDLgZ0S9XoN7/giphy.gif',
-            list: ['React', 'Redux', 'Redux Saga', 'firebase', 'Sass', 'React Router']
+            list: ['React', 'Redux', 'Redux Saga', 'firebase', 'Sass', 'React Router'],
+            link: 'https://react-merch.herokuapp.com',
+            code: 'https://github.com/albert-anthony6/crwn-clothing'
         }
     }
     
@@ -51,8 +55,8 @@ const ProjectOverview = ({ match, changeHome }) => {
                     </div>
 
                     <div className="overview-btns">
-                        <a href="https://react-theater.herokuapp.com" target="_blank"><button>View Project <FontAwesome className="fas fa-angle-double-right" name="angle-double-right"/></button></a>
-                        <a href="https://github.com/albert-anthony6/react-films" target="_blank"><button>View Code <FontAwesome className="fas fa-angle-double-right" name="angle-double-right"/></button></a>
+                        <a href={project.link} target="_blank"><button>View Project <FontAwesome className="fas fa-angle-double-right" name="angle-double-right"/></button></a>
+                        <a href={project.code} target="_blank"><button>View Code <FontAwesome className="fas fa-angle-double-right" name="angle-double-right"/></button></a>
                     </div>
                 </section>
 
