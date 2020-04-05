@@ -23,7 +23,7 @@ const ProjectOverview = ({ match, changeHome }) => {
             img: MoviesImg,
             gif: 'https://media.giphy.com/media/IgAS8mUgG6FZuWN9V1/giphy.gif',
             list: ['React', 'Redux', 'Hooks', 'TMDB API', 'Sass', 'React Router'],
-            link: 'https://react-theater.herokuapp.com',
+            link: 'https://react-flicks.herokuapp.com',
             code: 'https://github.com/albert-anthony6/react-films'
         }
     } else if(match.params.projectId === 'ecommerce'){
