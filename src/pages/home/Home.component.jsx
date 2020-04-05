@@ -103,11 +103,11 @@ const Home = ({ changeHome }) => {
 
                         <div className="clients-container">
                             <div className="client-box">
-                                <p>"Albert Valdes has generously offered his skills in building websites to me free of charge multiple times and has shown a great level of progress each time. He has shown me that he is able to create attractive and enjoyable websites with what he has learned over the past several months. If I were to get Albert to help me build a stunning website for my projects, I know I couldn't go wrong." <br/> <span>-Michelle Jimenez</span></p>
+                                <p>"Albert Valdes has generously offered his skills in building websites to me free of charge multiple times and has shown a great level of progress each time. He has shown me that he is able to create attractive and enjoyable websites with what he has learned. He's shown great potential as a web developer. If I were to get Albert to help me build a stunning website for my projects, I know I couldn't go wrong." <br/> <span>-Michelle Jimenez</span></p>
                             </div>
                             
                             <div className="client-box">
-                            <p>"Albert Valdes is someone who is capable of adaptively learning a new skill due to ability to challenge himself and know his limits and how they can be pushed further. He is patient with himself and knows when to step away from coding bugs, take a well-needed mental break, and get right back to work better and more efficiently than ever despite any pressure lingering around him." <br/> <span>-Allen Flores</span></p>
+                            <p>"Albert Valdes is someone who is capable of adaptively learning a new skill due to his willingness to challenge himself, know his limits, and how they can be pushed further. He is patient with himself and knows when to step away from coding bugs, take a well-needed mental break, and get right back to work with more efficiency than ever despite any pressure lingering around him." <br/> <span>-Allen Flores</span></p>
                             </div>
                         </div>
                     </div>

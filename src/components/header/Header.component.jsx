@@ -11,13 +11,16 @@ import Resume from '../../assets/WebResume.pdf';
 const Header = ({ home }) => {
     const [hidden, setHidden] = useState(true);
 
+    const toggleMenu = () => {
+        setHidden(!hidden);
+    }
+
     return(
         <div className="header-container">
             <Link to="/"><img src={Logo} alt="logo"/></Link>
 
-            <FontAwesome className="fa-bars" onClick={() => setHidden(!hidden)} name="bars" size="2x"/>
-            {
-                home ? 
+            <FontAwesome className="fa-bars" onClick={toggleMenu} name="bars" size="2x"/>
+            {home ? 
                 <ul className="nav-options">
                     <a href="#about"><li>About</li></a>
                     <a href="#project"><li>Projects</li></a>
@@ -38,7 +41,7 @@ const Header = ({ home }) => {
                     <a href="https://www.linkedin.com/in/avaldes21/" target="_blank"><li>LinkedIn <FontAwesome className="fa-linkedin" name="linkedin"/></li></a>
                 </ul>
             }
-            {!hidden ? <BurgerMenu/> : null}
+            {!hidden ? <BurgerMenu home={home} toggleMenu={toggleMenu}/> : null}
         </div>
     );
 };
