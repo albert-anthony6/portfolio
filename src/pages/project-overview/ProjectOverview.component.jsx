@@ -19,7 +19,7 @@ const ProjectOverview = ({ match, changeHome }) => {
 
     if(match.params.projectId === 'movie'){
         project = {
-            p: 'Browse for your favorite Movies and actors. Browse the latest and greatest films and find information about their budget, crew, rating, and runtime. Users have the ability to scroll through any category until they find a movie that catch their interest, go to specific category pages to search for a movie that would be under a specific category, or simply search for any movie within TMDB API by title.',
+            p: 'Browse for your favorite Movies and actors. Browse the latest and greatest films and find information about their budget, crew, rating, and runtime. Users have the ability to scroll through any category until they find a movie that catches their interest, go to specific category pages to search for a movie that would be under a specific category, or simply search for any movie within TMDB API by title.',
             img: MoviesImg,
             gif: 'https://media.giphy.com/media/IgAS8mUgG6FZuWN9V1/giphy.gif',
             list: ['React', 'Redux', 'Hooks', 'TMDB API', 'Sass', 'React Router'],
