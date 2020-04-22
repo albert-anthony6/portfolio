@@ -38,7 +38,7 @@ const ProjectOverview = ({ match, changeHome }) => {
         }
     } else if(match.params.projectId === 'netvideo'){
         project = {
-            p: "Browse and enjoy videos straight from the YouTube API with this YouTube clone app. In this YouTube-like app, users are able to search for any topic of their choosing and recieve several search results that are related to their search. The goal of this project is to give users the \"YouTube experience\" and make them feel like they're actually browsing videos on the popular website.",
+            p: "Browse and enjoy videos straight from the YouTube API with this YouTube clone app. In this YouTube-like app, users are able to search for any topic of their choosing and receive several search results that are related to their search. The goal of this project is to give users the \"YouTube experience\" and make them feel like they're actually browsing videos on the popular website.",
             img: NetVideoImg,
             gif: 'https://media.giphy.com/media/Kb4BR6kYHNINqkKJGk/giphy.gif',
             list: ['React', 'Sass', 'YouTube API', 'Hooks', 'FontAwesome'],
