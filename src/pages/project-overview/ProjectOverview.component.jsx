@@ -6,6 +6,7 @@ import Footer from '../../components/footer/Footer.component';
 import FontAwesome from 'react-fontawesome';
 import MoviesImg from '../../assets/Movies.png';
 import CrwnImg from '../../assets/CrwnImg.png';
+import NetVideoImg from '../../assets/NetVideoImg.png';
 
 import { Link, withRouter } from 'react-router-dom';
 
@@ -15,7 +16,7 @@ const ProjectOverview = ({ match, changeHome }) => {
         changeHome(false);
     }, []);
 
-    let project = {};
+    let project = {}; 
 
     if(match.params.projectId === 'movie'){
         project = {
@@ -35,6 +36,15 @@ const ProjectOverview = ({ match, changeHome }) => {
             link: 'https://react-merch.herokuapp.com',
             code: 'https://github.com/albert-anthony6/crwn-clothing'
         }
+    } else if(match.params.projectId === 'netvideo'){
+        project = {
+            p: "Browse and enjoy videos straight from the YouTube API with this YouTube clone app. In this YouTube-like app, users are able to search for any topic of their choosing and recieve several search results that are related to their search. The goal of this project is to give users the \"YouTube experience\" and make them feel like they're actually browsing videos on the popular website.",
+            img: NetVideoImg,
+            gif: 'https://media.giphy.com/media/Kb4BR6kYHNINqkKJGk/giphy.gif',
+            list: ['React', 'Sass', 'YouTube API', 'Hooks', 'FontAwesome'],
+            link: 'https://netvideo.herokuapp.com',
+            code: 'https://github.com/albert-anthony6/NetVideo'
+        }
     }
     
     return(
@@ -48,6 +58,8 @@ const ProjectOverview = ({ match, changeHome }) => {
                     <div className="overview-container">
                         <div className="overview-p">
                             <p>{project.p}</p>
+                            <br/>
+                            {match.params.projectId === 'movie' ? <p>Two versions of this project were made in order to show the project made with both class and functional components that utilize React Hooks.</p> : null}
                         </div>
                         <div className="overview-img">
                             <img src={project.img} alt="Project image"/>
@@ -55,8 +67,12 @@ const ProjectOverview = ({ match, changeHome }) => {
                     </div>
 
                     <div className="overview-btns">
-                        <a href={project.link} target="_blank"><button>View Project <FontAwesome className="fas fa-angle-double-right" name="angle-double-right"/></button></a>
-                        <a href={project.code} target="_blank"><button>View Code <FontAwesome className="fas fa-angle-double-right" name="angle-double-right"/></button></a>
+                        <div>
+                            <a href={project.link} target="_blank" rel="noopener noreferrer"><button>View Project <FontAwesome className="fas fa-angle-double-right" name="angle-double-right"/></button></a>
+                            <a href={project.code} target="_blank" rel="noopener noreferrer"><button>View Code <FontAwesome className="fas fa-angle-double-right" name="angle-double-right"/></button></a>
+                        </div>
+
+                        {match.params.projectId === 'movie' ? <a href="https://github.com/albert-anthony6/react-films-hooks" target="_blank" rel="noopener noreferrer"><button className="movie-hooks">View Code With Hooks <FontAwesome className="fas fa-angle-double-right" name="angle-double-right"/></button></a> : null}
                     </div>
                 </section>
 

@@ -13,9 +13,9 @@ const BurgerMenu = ({ toggleMenu, home }) => (
             <a href="#project"><li onClick={toggleMenu}>Projects</li></a>
             <a href="#testimonial"><li onClick={toggleMenu}>Testimonials</li></a>
             <a href="#footer"><li onClick={toggleMenu}>Contact</li></a>
-            <a href={Resume} target="_blank"><li onClick={toggleMenu}>Resume <FontAwesome className="fa-download" name="resume-download-button"/></li></a>
-            <a href="https://github.com/albert-anthony6" target="_blank"><li onClick={toggleMenu}>GitHub <FontAwesome className="fa-github" name="github"/></li></a>
-            <a href="https://www.linkedin.com/in/avaldes21/" target="_blank"><li onClick={toggleMenu}>LinkedIn <FontAwesome className="fa-linkedin" name="linkedin"/></li></a>
+            <a href={Resume} target="_blank" rel="noopener noreferrer"><li onClick={toggleMenu}>Resume <FontAwesome className="fa-download" name="resume-download-button"/></li></a>
+            <a href="https://github.com/albert-anthony6" target="_blank" rel="noopener noreferrer"><li onClick={toggleMenu}>GitHub <FontAwesome className="fa-github" name="github"/></li></a>
+            <a href="https://www.linkedin.com/in/avaldes21/" target="_blank" rel="noopener noreferrer"><li onClick={toggleMenu}>LinkedIn <FontAwesome className="fa-linkedin" name="linkedin"/></li></a>
         </ul>
         :
         <ul>
@@ -23,9 +23,9 @@ const BurgerMenu = ({ toggleMenu, home }) => (
             <a href="#about"><li onClick={toggleMenu}>About</li></a>
             <a href="#technologies"><li onClick={toggleMenu}>Technologies</li></a>
             <a href="#footer"><li onClick={toggleMenu}>Contact</li></a>
-            <a href={Resume} target="_blank"><li onClick={toggleMenu}>Resume <FontAwesome className="fa-download" name="resume-download-button"/></li></a>
-            <a href="https://github.com/albert-anthony6" target="_blank"><li onClick={toggleMenu}>GitHub <FontAwesome className="fa-github" name="github"/></li></a>
-            <a href="https://www.linkedin.com/in/avaldes21/" target="_blank"><li onClick={toggleMenu}>LinkedIn <FontAwesome className="fa-linkedin" name="linkedin"/></li></a>
+            <a href={Resume} target="_blank" rel="noopener noreferrer"><li onClick={toggleMenu}>Resume <FontAwesome className="fa-download" name="resume-download-button"/></li></a>
+            <a href="https://github.com/albert-anthony6" target="_blank" rel="noopener noreferrer"><li onClick={toggleMenu}>GitHub <FontAwesome className="fa-github" name="github"/></li></a>
+            <a href="https://www.linkedin.com/in/avaldes21/" target="_blank" rel="noopener noreferrer"><li onClick={toggleMenu}>LinkedIn <FontAwesome className="fa-linkedin" name="linkedin"/></li></a>
         </ul>   
     }
     </div>

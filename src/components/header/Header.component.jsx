@@ -27,8 +27,8 @@ const Header = ({ home }) => {
                     <a href="#testimonial"><li>Testimonials</li></a>
                     <a href="#footer"><li>Contact</li></a>
                     <a href={Resume} download><li>Resume <FontAwesome className="fa-download" name="resume-download-button"/></li></a>
-                    <a href="https://github.com/albert-anthony6" target="_blank"><li>GitHub <FontAwesome className="fa-github" name="github"/></li></a>
-                    <a href="https://www.linkedin.com/in/avaldes21/" target="_blank"><li>LinkedIn <FontAwesome className="fa-linkedin" name="linkedin"/></li></a>
+                    <a href="https://github.com/albert-anthony6" target="_blank" rel="noopener noreferrer"><li>GitHub <FontAwesome className="fa-github" name="github"/></li></a>
+                    <a href="https://www.linkedin.com/in/avaldes21/" target="_blank" rel="noopener noreferrer"><li>LinkedIn <FontAwesome className="fa-linkedin" name="linkedin"/></li></a>
                 </ul>
                 :
                 <ul className="nav-options">
@@ -37,8 +37,8 @@ const Header = ({ home }) => {
                     <a href="#technologies"><li>Technologies</li></a>
                     <a href="#footer"><li>Contact</li></a>
                     <a href={Resume} download><li>Resume <FontAwesome className="fa-download" name="resume-download-button"/></li></a>
-                    <a href="https://github.com/albert-anthony6" target="_blank"><li>GitHub <FontAwesome className="fa-github" name="github"/></li></a>
-                    <a href="https://www.linkedin.com/in/avaldes21/" target="_blank"><li>LinkedIn <FontAwesome className="fa-linkedin" name="linkedin"/></li></a>
+                    <a href="https://github.com/albert-anthony6" target="_blank" rel="noopener noreferrer"><li>GitHub <FontAwesome className="fa-github" name="github"/></li></a>
+                    <a href="https://www.linkedin.com/in/avaldes21/" target="_blank" rel="noopener noreferrer"><li>LinkedIn <FontAwesome className="fa-linkedin" name="linkedin"/></li></a>
                 </ul>
             }
             {!hidden ? <BurgerMenu home={home} toggleMenu={toggleMenu}/> : null}

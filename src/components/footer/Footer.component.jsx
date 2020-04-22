@@ -30,8 +30,8 @@ const Footer = () => (
         </div>
 
         <div className="footer-links">
-            <a href="https://github.com/albert-anthony6" target="_blank"><FontAwesome className="fas fa-github" name="github" size="2x"/></a>
-            <a href="https://www.linkedin.com/in/avaldes21/" target="_blank"><FontAwesome className="fas fa-linkedin" name="linkedin" size="2x"/></a>
+            <a href="https://github.com/albert-anthony6" target="_blank" rel="noopener noreferrer"><FontAwesome className="fas fa-github" name="github" size="2x"/></a>
+            <a href="https://www.linkedin.com/in/avaldes21/" target="_blank" rel="noopener noreferrer"><FontAwesome className="fas fa-linkedin" name="linkedin" size="2x"/></a>
         </div>
 
         <div className="copyright">© 2018 Albert Valdes</div>

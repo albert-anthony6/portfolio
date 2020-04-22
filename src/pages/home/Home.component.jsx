@@ -9,6 +9,7 @@ import HeroSection from '../../components/hero-section/HeroSection.component';
 import Footer from '../../components/footer/Footer.component';
 import MoviesThumb from '../../assets/MoviesThumb.png';
 import CrwnThumb from '../../assets/CrwnThumb.png';
+import NetVideo from '../../assets/NetVideoThumb.png';
 
 const Home = ({ changeHome }) => {
     useEffect(() => {
@@ -41,6 +42,7 @@ const Home = ({ changeHome }) => {
                         <div className="cards">
                             <Card name="/project/movie" info="Browse for your favorite Movies and actors. Browse the latest and greatest films and..." imgUrl={MoviesThumb}/>
                             <Card name="/project/ecommerce" info="Browse the Crown store for any clothing coming from a firebase database. Select items..." imgUrl={CrwnThumb}/>
+                            <Card name="/project/netvideo" info="Browse and enjoy videos straight from the YouTube API with this YouTube clone app..." imgUrl={NetVideo}/>
                         </div>
                     </div>
                 </section>
