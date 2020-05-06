@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
 
 import BurgerMenu from '../burger-menu/BurgerMenu.component';
-import Resume from '../../assets/AlbertResume.pdf';
+import Resume from '../../assets/ResumeAlbertV.pdf';
 
 const Header = ({ home }) => {
     const [hidden, setHidden] = useState(true);

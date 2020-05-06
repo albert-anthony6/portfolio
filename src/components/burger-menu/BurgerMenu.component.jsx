@@ -2,7 +2,7 @@ import React from 'react';
 import './BurgerMenu.styles.scss';
 
 import FontAwesome from 'react-fontawesome';
-import Resume from '../../assets/AlbertResume.pdf';
+import Resume from '../../assets/ResumeAlbertV.pdf';
 import { Link } from 'react-router-dom';
 
 const BurgerMenu = ({ toggleMenu, home }) => (
